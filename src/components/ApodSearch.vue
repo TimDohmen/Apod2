@@ -1,9 +1,9 @@
 <template>
   <div class="row">
-    <div class="ApodSearch col-12 mt-3">
+    <div class="ApodSearch col-6 mt-3 mx-auto">
       <div class="input-group mb-3">
         <input
-          type="text"
+          type="date"
           class="form-control"
           placeholder="Date in YYYY - MM - DD Form..."
           aria-describedby="button-addon1"
