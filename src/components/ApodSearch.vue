@@ -1,7 +1,14 @@
 <template>
-  <div class="ApodSearch col-12 mt-3">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
+  <div class="row">
+    <div class="ApodSearch col-12 mt-3">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Date in YYYY - MM - DD Form..."
+          aria-describedby="button-addon1"
+          v-model="query"
+        />
         <button
           class="btn btn-outline-primary"
           type="button"
@@ -9,14 +16,6 @@
           @click="searchApod()"
         >Search</button>
       </div>
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Date in YYYY - MM - DD Form..."
-        aria-label="Example text with button addon"
-        aria-describedby="button-addon1"
-        v-model="query"
-      />
     </div>
   </div>
 </template>

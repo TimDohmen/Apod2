@@ -1,6 +1,15 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+  <div class="container">
+    <div class="home">
+      <div class="row">
+        <div class="col-12 center">
+          <h1>
+            <img alt="Vue logo" src="../assets/logo.png" />
+            POD
+          </h1>
+        </div>
+      </div>
+    </div>
     <ApodSearch />
     <Apod />
   </div>
@@ -21,3 +30,9 @@ export default {
   }
 };
 </script>
+<style scoped>
+img {
+  transform: rotate(180deg);
+  height: 75px;
+}
+</style>
