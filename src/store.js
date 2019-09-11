@@ -44,7 +44,7 @@ export default new Vuex.Store({
 
       try {
         let res = await searchApi.get(urlParams + moment(new Date(+(new Date()) - Math.floor(Math.random() * 10000000000)))
-          .format('YYYY/MM/DD'))
+          .format('YYYY-MM-DD'))
         commit('setApod', res.data)
       } catch (error) {
 

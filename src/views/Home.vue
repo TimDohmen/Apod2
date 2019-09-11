@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container bgcolor">
     <div class="home">
       <div class="row">
         <div class="col-12 center">
