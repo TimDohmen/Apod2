@@ -12,6 +12,7 @@
     </div>
     <ApodSearch />
     <Apod />
+    <CatFact />
   </div>
 </template>
 
@@ -20,13 +21,15 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import Apod from "../components/Apod.vue";
 import ApodSearch from "../components/ApodSearch.vue";
+import CatFact from "../components/CatFact.vue";
 
 export default {
   name: "home",
   components: {
     HelloWorld,
     Apod,
-    ApodSearch
+    ApodSearch,
+    CatFact
   }
 };
 </script>
