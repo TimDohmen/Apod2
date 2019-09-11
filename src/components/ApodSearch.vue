@@ -15,6 +15,12 @@
           id="button-addon1"
           @click="searchApod()"
         >Search</button>
+        <button
+          class="btn btn-outline-primary"
+          type="button"
+          id="button-addon1"
+          @click="randomApod()"
+        >Random</button>
       </div>
     </div>
   </div>
@@ -31,6 +37,9 @@ export default {
   methods: {
     searchApod() {
       this.$store.dispatch("apodSearch", this.query);
+    },
+    randomApod() {
+      this.$store.dispatch("randomPic");
     }
   },
   components: {}

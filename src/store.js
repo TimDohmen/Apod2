@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
+import moment from 'moment'
 
 Vue.use(Vuex)
 
@@ -38,6 +39,19 @@ export default new Vuex.Store({
       } catch (error) {
 
       }
+    },
+    async randomPic({ commit, dispatch }) {
+
+      try {
+        let res = await searchApi.get(urlParams + moment(new Date(+(new Date()) - Math.floor(Math.random() * 10000000000)))
+          .format('YYYY/MM/DD'))
+        commit('setApod', res.data)
+      } catch (error) {
+
+      }
+
     }
+
   }
+
 })
